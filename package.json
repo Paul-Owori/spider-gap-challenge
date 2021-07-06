@@ -1,0 +1,23 @@
+{
+  "name": "spider_gap",
+  "version": "1.0.0",
+  "description": "Spidergap Coding Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "commit":"git add . && git commit && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gist.github.com/4b0a1e070612192fe7bcfcf05f6fac25.git"
+  },
+  "author": "Paul Robert Owori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gist.github.com/4b0a1e070612192fe7bcfcf05f6fac25"
+  },
+  "homepage": "https://gist.github.com/4b0a1e070612192fe7bcfcf05f6fac25",
+  "dependencies": {
+    "mocha": "^9.0.2"
+  }
+}
