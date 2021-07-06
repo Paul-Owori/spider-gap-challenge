@@ -1,4 +1,4 @@
-const partners = require("./partners_distance_filter/resources/partners.json");
+const partners = require("./partners.json");
 const greatCircleDistance = require("./greatCircleDistance");
 const stringToNumCoords = require("./stringToNumCoords");
 const sortArray = require("./sortArrByProperty");
