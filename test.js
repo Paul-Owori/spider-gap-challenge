@@ -1,8 +1,8 @@
 const assert = require("assert");
 
 // Deep clone
-const deepClone = require("./../deep_clone");
-const isNonIterableObject = require("./../deep_clone/isNonIterableObject");
+const deepClone = require("./deepClone");
+const isNonIterableObject = require("./isNonIterableObject");
 const deepCloneTestData = require("./dataToTest").deepCloneData;
 
 describe("deepClone", function () {

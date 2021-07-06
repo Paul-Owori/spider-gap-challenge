@@ -1,13 +1,13 @@
-const partners = require("./resources/partners.json");
-const greatCircleDistance = require("./utilities/great_circle_distance");
-const stringToNumCoords = require("./utilities/string_to_num_coords");
-const sortArray = require("./utilities/sort_array");
+const partners = require("./partners_distance_filter/resources/partners.json");
+const greatCircleDistance = require("./greatCircleDistance");
+const stringToNumCoords = require("./stringToNumCoords");
+const sortArray = require("./sortArrByProperty");
 
 /**
  * This function filters for all partners of SpiderGap within a 100km radius of central london from the partners.json object provided
  * @returns {object} an array of the company names and addresses of matching partners (with offices within 100km) sorted by company name (ascending)
  */
-const findClosestPartners = () => {
+const partnersDistanceFilter = () => {
   const centralLondon = [51.515419, -0.141099];
 
   let unsortedCloseOffices = [];
@@ -39,4 +39,4 @@ const findClosestPartners = () => {
   return sortedCloseOffices;
 };
 
-module.exports = findClosestPartners;
+module.exports = partnersDistanceFilter;
